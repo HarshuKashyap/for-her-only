@@ -1,9 +1,11 @@
 const text =
-"Shayad main perfect nahi hoon...\n\n" +
-"par jab tumhara naam aata hai,\n" +
-"dil apne aap muskurane lagta hai ❤️\n\n" +
-"Tum meri zindagi ka\n" +
-"wo hissa ho jahan mujhe sukoon milta hai 💕";
+"Some people feel like noise.\n\n" +
+"You feel like home.\n\n" +
+"Like the place my thoughts go\n" +
+"when they want to rest ❤️\n\n" +
+"I don’t know where this story leads,\n" +
+"but I know I want you in every chapter 💕\n\n" +
+"So tell me…";
 
 let index = 0;
 const speed = 40;
