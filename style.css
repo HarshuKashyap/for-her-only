@@ -21,23 +21,15 @@ body {
   border-radius: 28px;
   text-align: center;
   color: white;
-
   background: rgba(255,255,255,0.22);
   backdrop-filter: blur(14px);
-
   box-shadow: 0 25px 45px rgba(0,0,0,0.35);
   animation: pop 0.8s ease;
 }
 
 @keyframes pop {
-  from {
-    transform: scale(0.7);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 .hidden {
@@ -54,7 +46,7 @@ h1 {
   margin-bottom: 18px;
 }
 
-/* Question hidden initially */
+/* Question */
 .question {
   opacity: 0;
   margin-bottom: 18px;
