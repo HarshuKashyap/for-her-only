@@ -1,14 +1,16 @@
 const text =
-"Some people feel like noise.\n\n" +
-"You feel like home.\n\n" +
-"Like the place my thoughts go\n" +
-"when they want to rest ❤️\n\n" +
-"I don’t know where this story leads,\n" +
-"but I know I want you in every chapter 💕\n\n" +
-"So tell me…";
+"I don’t know when it started…\n\n" +
+"but somehow you became my calm,\n" +
+"my favorite thought,\n" +
+"and the place my heart feels at ease ❤️\n\n" +
+"I’m not asking for promises,\n" +
+"just honesty, warmth,\n" +
+"and moments that feel real 🤍\n\n" +
+"So I just want to ask…";
 
 let index = 0;
 const speed = 40;
+
 const typing = document.getElementById("typing");
 const question = document.getElementById("question");
 const buttons = document.getElementById("buttons");
@@ -19,7 +21,6 @@ function typeEffect() {
     index++;
     setTimeout(typeEffect, speed);
   } else {
-    // show question & buttons AFTER typing
     question.style.opacity = 1;
     buttons.style.display = "flex";
   }
@@ -27,11 +28,11 @@ function typeEffect() {
 
 typeEffect();
 
-// BUTTONS
+// Buttons
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 
-// NO button ALWAYS escape (mobile safe)
+// NO button escape (mobile + desktop)
 noBtn.addEventListener("touchstart", moveNo);
 noBtn.addEventListener("mouseover", moveNo);
 
@@ -42,7 +43,7 @@ function moveNo(e) {
   noBtn.style.transform = `translate(${x}px, ${y}px)`;
 }
 
-// YES → open NEW CARD
+// YES → open second card
 yesBtn.addEventListener("click", () => {
   document.getElementById("card1").classList.add("hidden");
   document.getElementById("card2").classList.remove("hidden");
